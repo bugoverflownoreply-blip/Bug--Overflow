@@ -2,7 +2,7 @@
 
 <h1 align="center"> Bug Overflow 🚀</h1> 
 <p align="center">
-  <a href="https://bug-overflow-y1fv.onrender.com/">
+  <a href="https://bug-overflow-1.onrender.com">
     <img alt="Bug Overflow image" title="Bug Overflow" src="/client/public/bugOverflow.png" width="450">
     
   </a>
@@ -13,7 +13,7 @@ Welcome to **Bug-Overflow**, a platform dedicated to fostering a vibrant communi
 </p>
 
 <p align="center">
-  <a href="https://bug-overflow-y1fv.onrender.com/">Bug Overflow
+  <a href="https://bug-overflow-1.onrender.com">Bug Overflow
   </a>
 </p>
 
@@ -33,9 +33,9 @@ Welcome to **Bug-Overflow**, a platform dedicated to fostering a vibrant communi
 
 ### Important links related to the project
 
-* <b>Deployed website 👉: </b> [Bug-Overflow](https://bug-overflow-y1fv.onrender.com/)
+* <b>Deployed website 👉: </b> [Bug-Overflow](https://bug-overflow-1.onrender.com)
 
-* <b>The backend is hosted here 👉: </b> [Bug-Overflow-Backend](https://bug-overflow-server-ql8j.onrender.com/)
+* <b>The backend is hosted here 👉: </b> [Bug-Overflow-Backend](https://bug-overflow.onrender.com)
 
 
 ## Technology Used
