@@ -4,7 +4,8 @@ import "./Help.css";
 
 const BLACKBOOK_DOCX_PATH = "/documents/BugOverflow_Blackbook.docx";
 const BLACKBOOK_PDF_PATH = "/documents/blackbook.pdf";
-const VIDEO_PATH = "/videos/bugoverflow-user-guide.mp4";
+const DEFAULT_VIDEO_PATH = "/videos/bugoverflow-user-guide.mp4";
+const VIDEO_PATH = process.env.REACT_APP_GUIDE_VIDEO_URL || DEFAULT_VIDEO_PATH;
 
 const Help = ({ slideIn, handleSlideIn }) => {
   const [activeTab, setActiveTab] = useState("user-guide");
@@ -48,8 +49,8 @@ const Help = ({ slideIn, handleSlideIn }) => {
                 Your browser does not support embedded video.
               </video>
               {/* <p className="help-video-note">
-                To use your own guide video, place it at
-                <code> client/public/videos/bugoverflow-user-guide.mp4</code>.
+                Uses <code>REACT_APP_GUIDE_VIDEO_URL</code> when configured, otherwise falls
+                back to <code>client/public/videos/bugoverflow-user-guide.mp4</code>.
               </p> */}
             </div>
             <ol className="help-flow-list">
