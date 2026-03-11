@@ -1,0 +1,3 @@
+
+# keep large local guide video out of git
+client/public/videos/bugoverflow-user-guide.mp4

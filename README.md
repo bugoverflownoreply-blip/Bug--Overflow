@@ -165,7 +165,7 @@ Features of our Bug Overflow are as follows:
 
 To setup the project on your local environment, follow the given steps:
 
-1. Fork the [krazy527/Bug-Overflow](https://github.com/krazy527/Bug-Overflow) repository.
+1. Fork the [santrasiddhi-2005/Bug-Overflow](https://github.com/santrasiddhi-2005/Bug-Overflow) repository.
 2. Clone the repository:
 ```
 https://github.com/<USERNAME>/Bug-Overflow.git
@@ -223,6 +223,11 @@ JWT_SECRET="replace-with-a-strong-random-secret"
 # -----------------------------
 # SMTP configuration (for OTP emails)
 # -----------------------------
+RESEND_API_KEY="RESEND_API_KEY"
+
+# -----------------------------
+# SMTP configuration (for OTP emails)
+# -----------------------------
 SMTP_HOST="smtp.gmail.com"
 SMTP_PORT=587
 SMTP_USER="your-email@example.com"
@@ -246,5 +251,5 @@ Your worthy contributions are most welcome to our Bug Overflow website. If you h
 
 ## Feedback
 
-Feel free to send any feedback on [Twitter](https://twitter.com/krazy527) or [file an issue](https://github.com/krazy527/Bug-Overflow/issues/new). 
+Feel free to [file an issue](https://github.com/santrasiddhi-2005/Bug-Overflow/issues/new). 
 
