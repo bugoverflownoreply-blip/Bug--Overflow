@@ -76,6 +76,9 @@ const Navbar = ({ handleSlideIn, darkMode, setDarkMode }) => {
           <Link to="/About" className="nav-item nav-btn res-nav">
             About
           </Link>
+          <Link to="/Help" className="nav-item nav-btn res-nav">
+            Help
+          </Link>
           <SearchBar />
         </div>
         <div className="navbar-2">

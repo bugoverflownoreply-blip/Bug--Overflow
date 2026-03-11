@@ -16,6 +16,7 @@ import Articles from "./Pages/Articles/Articles";
 import ArticleDetails from "./Pages/Articles/ArticleDetails";
 import ArticleEditor from "./Pages/Articles/ArticleEditor";
 import About from "./Pages/About/About";
+import Help from "./Pages/Help/Help";
 
 const AllRoutes = ({ slideIn, handleSlideIn }) => {
   return (
@@ -78,6 +79,10 @@ const AllRoutes = ({ slideIn, handleSlideIn }) => {
       <Route
         path="/About"
         element={<About slideIn={slideIn} handleSlideIn={handleSlideIn} />}
+      />
+      <Route
+        path="/Help"
+        element={<Help slideIn={slideIn} handleSlideIn={handleSlideIn} />}
       />
     </Routes>
   );

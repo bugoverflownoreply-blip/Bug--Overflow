@@ -1,0 +1,383 @@
+.help-page {
+  padding-top: 65px;
+  max-width: 960px;
+}
+
+.help-title {
+  margin: 0 0 10px;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.help-subtitle {
+  margin: 0 0 20px;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.help-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.help-tab {
+  border: 1px solid var(--color-border-default);
+  background: var(--color-bg-card);
+  color: var(--color-text-primary);
+  border-radius: 999px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.help-tab.active {
+  background: #0a95ff;
+  border-color: #0a95ff;
+  color: #fff;
+}
+
+.help-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border-default);
+  border-radius: 10px;
+  padding: 18px 20px;
+}
+
+.help-card h2 {
+  margin: 0 0 10px;
+  color: var(--color-text-primary);
+}
+
+.help-guide-intro {
+  margin: 0 0 18px;
+  color: var(--color-text-secondary);
+  line-height: 1.65;
+}
+
+.help-flow-list {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--color-text-primary);
+}
+
+.help-flow-list li {
+  margin: 12px 0;
+  line-height: 1.7;
+}
+
+.help-flow-list strong {
+  color: var(--color-text-primary);
+}
+
+.help-video-section {
+  margin-top: 18px;
+}
+
+.help-video-section h3 {
+  margin: 0 0 10px;
+  color: var(--color-text-primary);
+}
+
+.help-video {
+  width: 100%;
+  border-radius: 10px;
+  background: #000;
+  max-height: 420px;
+}
+
+.help-video-note {
+  margin-top: 10px;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+.help-video-note code {
+  margin-left: 4px;
+  background: rgba(120, 120, 120, 0.14);
+  border-radius: 4px;
+  padding: 1px 6px;
+}
+
+.blackbook-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.blackbook-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.blackbook-link {
+  text-decoration: none;
+  color: #0a95ff;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(10, 149, 255, 0.1);
+}
+
+.blackbook-link.secondary {
+  color: var(--color-text-primary);
+  background: rgba(127, 127, 127, 0.12);
+}
+
+.blackbook-link:hover {
+  background: rgba(10, 149, 255, 0.18);
+}
+
+.blackbook-link.secondary:hover {
+  background: rgba(127, 127, 127, 0.18);
+}
+
+.blackbook-pdf-frame {
+  border: 1px solid var(--color-border-default);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f8f9f9;
+}
+
+.blackbook-pdf {
+  width: 100%;
+  height: 72vh;
+  min-height: 640px;
+  border: 0;
+  display: block;
+}
+
+.blackbook-content {
+  max-height: 65vh;
+  overflow: auto;
+  border: 1px solid var(--color-border-default);
+  border-radius: 12px;
+  padding: 24px;
+  line-height: 1.75;
+  color: var(--color-text-primary);
+  background: var(--color-bg-main);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.blackbook-content > *:first-child {
+  margin-top: 0;
+}
+
+.blackbook-content > *:last-child {
+  margin-bottom: 0;
+}
+
+.blackbook-content p {
+  margin: 0 0 1rem;
+  color: var(--color-text-primary);
+}
+
+.blackbook-content h1,
+.blackbook-content h2,
+.blackbook-content h3,
+.blackbook-content h4,
+.blackbook-content h5,
+.blackbook-content h6 {
+  margin: 1.75rem 0 0.85rem;
+  line-height: 1.3;
+  color: var(--color-text-primary);
+  font-weight: 700;
+}
+
+.blackbook-content h1 {
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--color-border-default);
+}
+
+.blackbook-content h2 {
+  font-size: 1.6rem;
+}
+
+.blackbook-content h3 {
+  font-size: 1.3rem;
+}
+
+.blackbook-content h4,
+.blackbook-content h5,
+.blackbook-content h6 {
+  font-size: 1.08rem;
+}
+
+.blackbook-content ul,
+.blackbook-content ol {
+  margin: 0 0 1.1rem;
+  padding-left: 1.5rem;
+}
+
+.blackbook-content li {
+  margin-bottom: 0.5rem;
+}
+
+.blackbook-content a {
+  color: #0a95ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.blackbook-content a:hover {
+  text-decoration: underline;
+}
+
+.blackbook-content strong {
+  font-weight: 700;
+}
+
+.blackbook-content em {
+  font-style: italic;
+}
+
+.blackbook-content blockquote {
+  margin: 1.25rem 0;
+  padding: 0.75rem 1rem;
+  border-left: 4px solid #0a95ff;
+  background: rgba(10, 149, 255, 0.08);
+  border-radius: 0 10px 10px 0;
+}
+
+.blackbook-content hr {
+  border: 0;
+  border-top: 1px solid var(--color-border-default);
+  margin: 1.5rem 0;
+}
+
+.blackbook-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 10px;
+}
+
+.blackbook-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.25rem 0;
+  overflow: hidden;
+  border: 1px solid var(--color-border-default);
+  border-radius: 10px;
+}
+
+.blackbook-content th,
+.blackbook-content td {
+  border: 1px solid var(--color-border-default);
+  padding: 0.75rem 0.9rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.blackbook-content th {
+  background: rgba(10, 149, 255, 0.08);
+  font-weight: 700;
+}
+
+.blackbook-content tr:nth-child(even) td {
+  background: rgba(127, 127, 127, 0.04);
+}
+
+.help-error {
+  margin: 0;
+  color: #d93f3f;
+}
+
+body.dark-mode .help-title,
+body.dark-mode .help-card h2,
+body.dark-mode .help-flow-list,
+body.dark-mode .help-video-section h3,
+body.dark-mode .blackbook-content {
+  color: var(--color-dark-text);
+}
+
+body.dark-mode .help-subtitle,
+body.dark-mode .help-video-note,
+body.dark-mode .help-guide-intro {
+  color: #bcbcbc;
+}
+
+body.dark-mode .help-tab {
+  background: var(--color-dark-surface);
+  border-color: var(--color-dark-border);
+  color: var(--color-dark-text);
+}
+
+body.dark-mode .help-tab.active {
+  background: #0a95ff;
+  border-color: #0a95ff;
+  color: #fff;
+}
+
+body.dark-mode .help-card {
+  background: var(--color-dark-surface);
+  border-color: var(--color-dark-border);
+}
+
+body.dark-mode .blackbook-content {
+  border-color: var(--color-dark-border);
+  background: var(--color-bg-main);
+}
+
+body.dark-mode .blackbook-link.secondary {
+  color: var(--color-dark-text);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+body.dark-mode .blackbook-pdf-frame {
+  border-color: var(--color-dark-border);
+  background: var(--color-dark-surface);
+}
+
+body.dark-mode .blackbook-content h1 {
+  border-bottom-color: var(--color-dark-border);
+}
+
+body.dark-mode .blackbook-content blockquote {
+  background: rgba(10, 149, 255, 0.14);
+}
+
+body.dark-mode .blackbook-content hr,
+body.dark-mode .blackbook-content table,
+body.dark-mode .blackbook-content th,
+body.dark-mode .blackbook-content td {
+  border-color: var(--color-dark-border);
+}
+
+body.dark-mode .blackbook-content th {
+  background: rgba(10, 149, 255, 0.18);
+}
+
+body.dark-mode .blackbook-content tr:nth-child(even) td {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+@media screen and (max-width: 760px) {
+  .help-page {
+    padding-top: 20px;
+  }
+
+  .blackbook-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .blackbook-actions {
+    width: 100%;
+  }
+
+  .blackbook-pdf {
+    min-height: 520px;
+    height: 68vh;
+  }
+
+  .blackbook-content {
+    padding: 16px;
+  }
+}

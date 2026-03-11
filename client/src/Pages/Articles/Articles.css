@@ -82,12 +82,19 @@
     border-radius: 5px;
     padding: 12px;
     overflow-x: auto;
+    color: #1f2328;
 }
 
 .article-body code {
     background-color: #f6f6f6;
     border-radius: 4px;
     padding: 2px 5px;
+    color: #1f2328;
+}
+
+.article-body pre code {
+    background: transparent;
+    padding: 0;
 }
 
 body.dark-mode .article-card {
@@ -97,4 +104,20 @@ body.dark-mode .article-card {
 
 body.dark-mode .article-body {
     color: #f2f2f2;
+}
+
+body.dark-mode .article-body pre {
+    background-color: #1f2328;
+    border-color: #39414a;
+    color: #e6edf3;
+}
+
+body.dark-mode .article-body code {
+    background-color: #2b3138;
+    color: #e6edf3;
+}
+
+body.dark-mode .article-body pre code {
+    background: transparent;
+    color: inherit;
 }
