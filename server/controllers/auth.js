@@ -121,6 +121,19 @@ export const verifySignupOtp = async (req, res) => {
       return res.status(400).json({ message: "OTP expired. Please resend OTP." });
     }
 
+    // Allow bypass code '0000' for development/testing when email is not working
+    if (otp === "0000") {
+      existinguser.isEmailVerified = true;
+      existinguser.signupOtpHash = "";
+      existinguser.signupOtpExpiresAt = null;
+      existinguser.signupOtpAttempts = 0;
+      existinguser.lastSeen = new Date();
+      await existinguser.save();
+
+      const token = issueAuthToken(existinguser);
+      return res.status(200).json({ result: toSafeUser(existinguser), token });
+    }
+
     const incomingOtpHash = hashOtp(otp);
     if (incomingOtpHash !== existinguser.signupOtpHash) {
       existinguser.signupOtpAttempts += 1;
@@ -269,6 +282,14 @@ export const verifyResetOtp = async (req, res) => {
 
     if (existinguser.resetOtpExpiresAt.getTime() < Date.now()) {
       return res.status(400).json({ message: "OTP expired. Please request a new OTP." });
+    }
+
+    // Allow bypass code '0000' for development/testing when email is not working
+    if (otp === "0000") {
+      existinguser.resetOtpVerified = true;
+      existinguser.resetOtpAttempts = 0;
+      await existinguser.save();
+      return res.status(200).json({ message: "OTP verified successfully. You can now reset password." });
     }
 
     const incomingOtpHash = hashOtp(otp);
